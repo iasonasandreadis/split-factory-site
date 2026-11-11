@@ -108,3 +108,8 @@ footer{padding-top:36px;padding-bottom:56px;font-size:17px}.fine{font:400 12.5px
 .pipe{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.pipe{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.pipe{grid-template-columns:1fr}.sb-row{grid-template-columns:80px 1fr auto}}
+.flow{list-style:none;margin:6px 0 0;padding:0;counter-reset:f}
+.flow li{counter-increment:f;display:grid;grid-template-columns:34px 82px 1fr;gap:10px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule);font-size:16.5px}
+.flow li:before{content:counter(f,decimal-leading-zero);font:500 13px var(--mono);color:var(--blue)}
+.flow b{font-family:var(--disp);font-size:17px}.flow span{color:var(--ink2)}
+@media(max-width:520px){.flow li{grid-template-columns:30px 1fr}.flow span{grid-column:2}}
