@@ -113,3 +113,4 @@ footer{padding-top:36px;padding-bottom:56px;font-size:17px}.fine{font:400 12.5px
 .flow li:before{content:counter(f,decimal-leading-zero);font:500 13px var(--mono);color:var(--blue)}
 .flow b{font-family:var(--disp);font-size:17px}.flow span{color:var(--ink2)}
 @media(max-width:520px){.flow li{grid-template-columns:30px 1fr}.flow span{grid-column:2}}
+@media(max-width:600px){.ytick text,.xtick text{font-size:18px}.val text{font-size:19px}.hl,.hv{font-size:16px}.chart svg{overflow:visible}}
